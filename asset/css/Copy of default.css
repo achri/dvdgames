@@ -1,0 +1,336 @@
+/*	CORNERING
+---------------------------
+	MOZILLA
+	-moz-border-radius-topleft: 14px;
+	-moz-border-radius-topright: 14px;
+	-moz-border-radius-bottomleft: 14px;
+	-moz-border-radius-bottomright: 14px;
+	OTHER
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+*/
+* {
+	PADDING: 0px; 
+	MARGIN: 0px; 
+}
+
+BODY {
+	TEXT-ALIGN: center; 
+	FONT: 13px/1.5em "Trebuchet MS", sans-serif; 
+	BACKGROUND: url(../images/bg.gif) repeat;
+	height:80%;
+}
+
+#wrap { 
+	TEXT-ALIGN: left; 
+	MARGIN: 12px auto 0 auto; 
+	WIDTH: 760px; 
+	HEIGHT: 100%; 
+}
+
+#header {
+	POSITION: relative; 
+	WIDTH: 660px;
+	HEIGHT: 100px;
+	-moz-border-radius-topleft: 14px;
+	-moz-border-radius-topright: 60px;
+	-webkit-border-top-left-radius: 14px;
+	-webkit-border-top-right-radius: 60px;
+}
+
+#banner-warp {
+	padding:20px 20px 21px 25px;
+}
+
+#banner-warp #logo {
+	font-size:35px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:oblique;
+	font-variant:small-caps;
+	font-weight:100;
+}
+
+#banner-warp #slogan {
+	font-size:15px;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-variant:small-caps;
+	font-weight:100;
+}
+
+#themes {
+	FLOAT:right;
+	//PADDING: 3px 3px 0px 0px;
+}
+
+#menu {
+	PADDING: 0px; 
+	WIDTH: 700px; 
+	FONT: bold 14px/35px "trebuchet MS", Arial, Tahoma, Sans-serif;
+	HEIGHT: 35px; 
+	CLEAR: both; 
+	-moz-border-radius-topright: 14px;
+	-webkit-border-top-right-radius: 14px;
+}
+
+#menu-selectable {
+	FLOAT: left;
+}
+
+#content-wrap {
+	PADDING: 10px; 
+	PADDING-BOTTOM: 12px; 
+	CLEAR: both; 
+	HEIGHT: 370px;
+	-moz-border-radius-topright: 14px;
+	//-moz-border-radius-bottomleft: 14px;
+	-webkit-border-top-right-radius: 14px;
+	//-webkit-border-bottom-left-radius: 14px;
+}
+
+/* PRODUCT */
+
+#product-box {
+	padding : 8px 0 0 0;
+	height:280px;
+	overflow: auto;	
+}
+
+#product-list { 
+	width: 100%; 
+	height: 100%; 
+} * html #product-list { height: 12em; } /* IE6 */
+.product.custom-state-active { 
+	background: #eee; 
+}
+.product li { 
+	float: left; 
+	width: 86px; 
+	padding: 5px;
+	margin: 0 0 8px 8px; 
+	text-align: center; 
+	z-index: 10;
+}
+.product li h5 { 
+	margin: 0 0 0.4em; 
+	cursor: move; 
+}
+.product li a { 
+	float: right; 
+}
+.product li a.ui-icon-zoomin { 
+	float: left; 
+}
+.product li img { 
+	width: 99%;
+	cursor: move; 
+}
+.product-corner {
+	-moz-border-radius-topright: 14px;
+	-moz-border-radius-bottomleft: 14px;
+	-webkit-border-top-right-radius: 14px;
+	-webkit-border-bottom-left-radius: 14px;	
+}
+
+/* CART */
+
+#cart-box {
+	height: 100px;
+	padding : 3px auto;
+	margin-bottom: 8px;
+	//z-index: 5;
+}
+
+#cart-list { 
+	height: 70px; 
+	padding: 0 2px 0 10px;
+	overflow: auto;	
+} * html #cart-list { height: 40px; }* /* IE6 */
+#cart-box h4 { 
+	line-height: 16px; 
+	margin: 0 0 0.4em; 
+}
+#cart-box h4 .ui-icon { 
+	float: left; 
+}
+#cart-list .product h5 { 
+	display: none; 
+}
+#cart-list .product img {
+	//width:48px;	
+}
+
+#content {
+	PADDING: 0px 0px 0px 15px; 
+	MARGIN: 0px; 
+	WIDTH: 450px;  
+	FLOAT: left; 
+}
+
+#sidebar {
+	PADDING: 0px 15px 0px 0px; 
+	MARGIN: 0px auto;  
+	WIDTH: 240px;  
+	FLOAT: right; 
+}
+
+.box {
+	BORDER: #c0c0c0 1px solid; 
+	MARGIN: 0px 0px 10px 0px; 
+	HEIGHT: 288px;
+	//overflow:auto;
+}
+
+#category-sel {
+	margin:7px auto;
+	HEIGHT:55px;
+	WIDTH: 70px;
+	FLOAT: right;
+	text-align: center;
+}
+
+#category-sel img{
+	margin:2px auto;
+	width: 65px; 
+	height: 50px;
+	text-align: center;
+}
+
+#category-selectable img {
+	margin:2px auto;
+	width:55px;
+	height:40px;
+}
+
+#feedback { font-size: 1.4em; }
+#category-selectable .ui-selecting { background: #FECA40; }
+#category-selectable .ui-selected { background: #F39814; color: white; }
+#category-selectable { list-style-type: none;}
+#category-selectable li { margin: 3px 3px 3px 3px; padding: 3px auto; float: left; width: 60px; height: 45px; font-size: 15pt; text-align: center; }
+
+
+.coloumn {
+	BORDER-LEFT: #c0c0c0 1px solid;
+	BORDER-RIGHT: #c0c0c0 1px solid;
+	BORDER-BOTTOM: #c0c0c0 1px solid; 
+	PADDING: 0px; 
+	MARGIN: 0px 0px 10px; 
+	HEIGHT: 200px;
+}
+
+.coloumn P {
+	MARGIN:15px;
+}
+
+#menu_accordion {
+	HEIGHT: 260px;
+}
+
+#menu_accordion .accordion_content {
+	PADDING: 5px 5px 5px 5px;
+}
+
+#footer-left {
+	HEIGHT: 55px; 
+	//CLEAR: both; 
+	//WIDTH: 85px;
+	float: right;
+	padding-right:15px;
+	font-size:11px;
+	font-family: fantasy;
+	-moz-border-radius-bottomleft: 14px;
+	//-moz-border-radius-bottomright: 14px;
+	-webkit-border-bottom-left-radius: 14px;
+	//-webkit-border-bottom-right-radius: 14px;
+}
+
+#footer-left #footer-lr {
+	float: right;
+	margin: 0 0 0 12px;
+}
+
+#footer-left #footer-lr ul li{
+	list-style: none;
+}
+
+#footer-left #footer-lr button{
+	width:100px;
+	height:18px;
+	margin-top:2px;
+}
+
+#footer-left #footer-ll {
+	float:left;
+	margin-bottom:3px;
+}
+
+#footer-left #footer-ll input {
+	height: 15px;
+	font-size: 11px; 	
+}
+
+#footer-left #footer-ll button {
+	height: 38px;
+	font-size: 11px; 	
+}
+
+#footer-left .footer-login {	
+	float: left; 
+	PADDING: 3px 0px 0px 15px;
+	width:70px;	
+}
+
+#footer-left .login {
+	margin-top:3px;
+	Width:75px;	
+}
+
+#footer-left #login {
+	display:none;
+	FLOAT: left;
+	MARGIN:5px 0 0 14px;
+}
+
+#footer-right {
+	HEIGHT: 55px; 
+	CLEAR: both; 
+	WIDTH: 330px;
+	float: right;
+	font-size:11px;
+	font-family: cursive;
+	//-moz-border-radius-bottomleft: 14px;
+	-moz-border-radius-bottomright: 14px;
+	//-webkit-border-bottom-left-radius: 14px;
+	-webkit-border-bottom-right-radius: 14px;
+}
+
+#footer-right P {
+	PADDING: 0px; 
+	MARGIN: 0 25px 0 0;  
+	COLOR: #ffffff; 
+	float: right;
+}
+#footer-right A {
+	PADDING: 0px; 
+	FONT-SIZE: 12px; 
+	TEXT-DECORATION: underline; 
+}
+#footer-right A:hover {
+	PADDING: 0px; 
+	FONT-SIZE: 12px; 
+	TEXT-DECORATION: none;
+}
+#footer-right #owner A {
+	TEXT-DECORATION: none;
+}	
+
+.spacer {
+	PADDING-BOTTOM: 0px; 
+	MARGIN: -5px; 
+	PADDING-LEFT: 0px; 
+	PADDING-RIGHT: 0px; 
+	CLEAR: both; 
+	PADDING-TOP: 0px
+}

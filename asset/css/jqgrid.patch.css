@@ -1,0 +1,21 @@
+/* buggy pagging toolbar text for 3.6 with ui-themes */
+.ui-pg-table {color: white; font-size: 12px}
+
+/* CUSTOME CSS */
+.ui-jqgrid-title td, .ui-th-column,.jqgrow td,.footrow td,.ui-jqgrid-pager td{
+	font: bold 14px/18px "trebuchet MS", Arial, Tahoma, Sans-serif;
+	text-decoration: none;
+	/*color:white;*/
+	outline: none;
+	letter-spacing: 0;
+	overflow: hidden;
+	font-variant:small-caps;
+}
+
+.ui-jqgrid .ui-pg-selbox {
+	/*display:none;*/
+}
+
+.ui-jqgrid .ui-jqgrid-view{
+	/*max-height:167 !important;*/
+}

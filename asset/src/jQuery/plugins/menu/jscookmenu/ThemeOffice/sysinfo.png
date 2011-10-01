@@ -1,0 +1,33 @@
+<script type="text/javascript">
+$(document).ready(function() {
+	var progrid_content = jQuery("#newapi<?php echo $produk_grid['gridname'];?>"),
+		histgrid_content = jQuery("#newapi_history");
+	
+	dtgLoadButton();
+	
+	var progrid = progrid_content.jqGrid({
+		ajaxGridOptions : {
+			type:"POST"
+		},
+		jsonReader : {
+			root:"data",
+			repeatitems: false
+		},
+		ondblClickRow: function(id){
+			
+			return;
+		},
+		viewrecords: true,
+		autowidth: true,
+		loadError :function(xhr,status, err){ 
+			try {
+				jQuery.jgrid.info_dialog(jQuery.jgrid.errors.errcap,'<div class="ui-state-error">'+ xhr.responseText +'</div>', jQuery.jgrid.edit.bClose,{buttonalign:'right'});
+			} 
+			catch(e) { alert(xhr.responseText);} 
+		},
+		onSelectRow: function(kat_id){	
+			
+		},
+		gridComplete: function(){ 
+			var ids = progrid_content.jqGrid('getDataIDs'); 
+			for(var i=

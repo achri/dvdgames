@@ -1,0 +1,33 @@
+<?php 
+if (isset($extraSubHeaderContent)) 
+	//echo $extraSubHeaderContent;
+?>
+<script type="text/javascript">	
+//$(document).ready(function() {
+	var beligrid_content = jQuery("#newapi<?php echo $id_grid;?>"),
+		toolbar = $("#t_newapi<?php echo $id_grid;?>"),
+		lastsel;
+	
+	dtgLoadButton();
+
+	var beligrid = beligrid_content.jqGrid({
+		ajaxGridOptions : {
+			type:"POST"
+		},
+		jsonReader : {
+			root:"data",
+			repeatitems: false
+		},
+		ondblClickRow: function(id){
+			
+			return;
+		},
+		loadError :function(xhr,status, err){ 
+			try {
+				jQuery.jgrid.info_dialog(jQuery.jgrid.errors.errcap,'<div class="ui-state-error">'+ xhr.responseText +'</div>', jQuery.jgrid.edit.bClose,{buttonalign:'right'});
+			} 
+			catch(e) { alert(xhr.responseText);} 
+		},
+		onSelectRow:function(id) {
+			if(id && id!==lastsel){ 
+		

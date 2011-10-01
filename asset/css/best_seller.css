@@ -1,0 +1,42 @@
+.content-footer {
+	width:390px;
+	margin-top: 3px;
+	padding: 0 5 0 5;
+	BORDER: #c0c0c0 1px solid;
+	FLOAT: left;
+	HEIGHT: 62px;
+}
+
+.content-best-dvd {
+	padding-top: 5px;
+}
+
+.content-best-dvd ul {
+	width:350px;	
+}
+
+.content-best-dvd ul li {
+	margin:0px 5px 0px 5px;
+}
+
+.content-best-dvd ul img{
+	/*width:70px;
+	height:50px;*/
+}
+
+.jc-prev {
+	margin-right: 10px;
+	float: left;
+} 
+
+.jc-prev img, .jc-next  img{
+	/*height:30px;
+	width:30px;*/
+	margin-top: 15px;
+}
+
+.jc-next {
+	float: right;
+}
+
+

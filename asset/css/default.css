@@ -1,0 +1,311 @@
+/*	CORNERING
+---------------------------
+	MOZILLA
+	-moz-border-radius-topleft: 14px;
+	-moz-border-radius-topright: 14px;
+	-moz-border-radius-bottomleft: 14px;
+	-moz-border-radius-bottomright: 14px;
+	OTHER
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+*/
+
+* {
+	PADDING: 0px; 
+	MARGIN: 0px; 
+}
+
+BODY {
+	TEXT-ALIGN: center; 
+	FONT: 13px/1.5em "Trebuchet MS", sans-serif; 
+	/*BACKGROUND: url(../images/layout/bg.gif) repeat;*/
+	height:90%;
+	border:0;
+	background-color:#000000;
+	width: 100%;
+}
+
+#glare
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -99999;
+}
+
+#glare-image
+{
+  background-image: url('../images/layout/page_gl.png');
+  background-repeat: no-repeat;
+  height: 422px;
+  width: 973px;
+  margin: 0;
+}
+
+html:first-child #glare
+{
+  border: 1px solid transparent;/* Opera fix */
+}
+
+#glare-foot
+{
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: 72%;
+  top: 48%;
+  z-index: -99999;
+}
+
+#glare-foot-image
+{
+  background-image: url('../images/layout/page_gl_foot.png');
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 350px;
+  margin: 0;
+}
+
+html:first-child #glare-foot
+{
+  border: 1px solid transparent;/* Opera fix */
+}
+
+#wrap { 
+	TEXT-ALIGN: left; 
+	MARGIN: 25px auto 0 auto; 
+	WIDTH: 770px; 
+	HEIGHT: 100%; 
+}
+
+#header {
+	POSITION: relative; 
+	WIDTH: 700px;
+	HEIGHT: 85px;
+	-moz-border-radius-topleft: 14px;
+	-moz-border-radius-topright: 60px;
+	-webkit-border-top-left-radius: 14px;
+	-webkit-border-top-right-radius: 60px;
+}
+
+#banner-warp {
+	padding-top:20px;
+	padding-right:20px; 
+	padding-bottom:7px;
+	padding-left:25px;
+}
+
+#banner-warp #logo {
+	/*font-size:35px;*/
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:oblique;
+	font-variant:small-caps;
+	font-weight:100;
+}
+
+#banner-warp #slogan {
+	font-size:15px;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-variant:small-caps;
+	font-weight:100;
+}
+
+#themes {
+	FLOAT:right;
+	/*PADDING: 3px 3px 0px 0px;*/
+}
+
+#menu {
+	PADDING: 0px; 
+	WIDTH: 750px; 
+	FONT: bold 14px/35px "trebuchet MS", Arial, Tahoma, Sans-serif;
+	HEIGHT: 35px; 
+	CLEAR: both; 
+	-moz-border-radius-topright: 14px;
+	-webkit-border-top-right-radius: 14px;
+}
+
+#submenu {
+	WIDTH:700px;
+	display: none;	
+}
+
+.content-wrap {
+	PADDING: 20 10 10 10; 
+	PADDING-TOP: 15px;
+	PADDING-BOTTOM: 5px; 
+	CLEAR: both; 
+	HEIGHT: 400px;
+	-moz-border-radius-topright: 14px;
+	/*-moz-border-radius-bottomleft: 14px;*/
+	-webkit-border-top-right-radius: 14px;
+	/*-webkit-border-bottom-left-radius: 14px;*/
+}
+
+#content {
+	PADDING: 0px 0px 0px 15px; 
+	MARGIN: 0px; 
+	WIDTH: 480px;  
+	FLOAT: left;
+}
+
+#sidebar {
+	PADDING: 0px 15px 0px 0px; 
+	MARGIN: 0px auto;  
+	WIDTH: 240px;  
+	FLOAT: right; 
+}
+
+.box {
+	BORDER: #c0c0c0 1px solid; 
+	MARGIN: 0px 0px 10px 0px; 
+	HEIGHT: 310px;
+	/*overflow:auto;*/
+}
+
+
+.coloumn {
+	BORDER-LEFT: #c0c0c0 1px solid;
+	BORDER-RIGHT: #c0c0c0 1px solid;
+	BORDER-BOTTOM: #c0c0c0 1px solid; 
+	PADDING: 0px; 
+	MARGIN: 0px 0px 10px; 
+	HEIGHT: 200px;
+}
+
+.coloumn P {
+	MARGIN:15px;
+}
+
+#footer-left {
+	HEIGHT: 55px; 
+	/*CLEAR: both; */
+	/*WIDTH: 85px;*/
+	float: right;
+	padding-right:15px;
+	font-size:11px;
+	font-family: fantasy;
+	-moz-border-radius-bottomleft: 14px;
+	/*-moz-border-radius-bottomright: 14px;*/
+	-webkit-border-bottom-left-radius: 14px;
+	/*-webkit-border-bottom-right-radius: 14px;*/
+	
+}
+
+#footer-left #footer-lr {
+	float: right;
+	margin: 0 0 0 10px;
+}
+
+#footer-left #footer-lr ul li{
+	list-style: none;
+}
+
+#footer-left #footer-lr button{
+	width:75px;
+	height:18px;
+	margin-top:2px;
+}
+
+#footer-left #footer-ll {
+	float:left;
+	margin-bottom:3px;
+}
+
+#footer-left #footer-ll input {
+	height: 15px;
+	font-size: 11px; 	
+}
+
+#footer-left #footer-ll button {
+	height: 38px;
+	font-size: 11px; 	
+}
+
+#footer-left .footer-login {	
+	float: left; 
+	/*PADDING: 3px 0px 0px 15px;*/
+	margin : 3px 0 0 15px;
+	width:70px;	
+	/*border : 1px solid;*/
+}
+
+#footer-left .login {
+	margin-top:3px;
+	Width:75px;	
+}
+
+#footer-left #login {
+	display:none;
+	FLOAT: left;
+	MARGIN:4px 0 0 14px;
+	/*border:1px solid;*/
+}
+
+#footer-right {
+	HEIGHT: 55px; 
+	CLEAR: both; 
+	WIDTH: 330px;
+	float: right;
+	font-size:11px;
+	font-family: cursive;
+	/*-moz-border-radius-bottomleft: 14px;*/
+	-moz-border-radius-bottomright: 14px;
+	/*-webkit-border-bottom-left-radius: 14px;*/
+	-webkit-border-bottom-right-radius: 14px;
+	
+}
+
+#footer-right P {
+	PADDING: 0px; 
+	MARGIN: 0 25px 0 0;  
+	COLOR: #ffffff; 
+	float: right;
+}
+#footer-right A {
+	PADDING: 0px; 
+	FONT-SIZE: 12px; 
+	TEXT-DECORATION: underline; 
+}
+#footer-right A:hover {
+	PADDING: 0px; 
+	FONT-SIZE: 12px; 
+	TEXT-DECORATION: none;
+}
+#footer-right #owner A {
+	TEXT-DECORATION: none;
+}	
+
+.spacer {
+	PADDING-BOTTOM: 0px; 
+	MARGIN: -5px; 
+	PADDING-LEFT: 0px; 
+	PADDING-RIGHT: 0px; 
+	CLEAR: both; 
+	PADDING-TOP: 0px
+}
+
+.jc-btn {float:left}
+
+.mfont{
+	text-decoration: none;
+	/*color:white;*/
+	outline: none;
+	letter-spacing: 0;
+	font-variant:small-caps;
+}
+
+.tfont{
+	font: 14px/18px "trebuchet MS", Arial, Tahoma, Sans-serif;
+	text-decoration: none; 
+	/*color:white !important;*/
+	outline: none;
+	letter-spacing: 0;
+	font-variant:small-caps;
+}
+

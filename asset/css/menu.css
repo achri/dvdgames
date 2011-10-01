@@ -1,0 +1,31 @@
+#menu_lava {
+margin-top:2px;	
+}
+#menu_lava li {
+float: left;
+list-style: none;
+padding-left:45px;
+margin-left:10px;
+}
+#menu_lava li.backLava {
+background: url("../images/layout/dvd1.png") no-repeat left;
+z-index: 8;
+position: absolute;
+height: 32px;
+}
+#menu_lava li a {
+text-decoration: none;
+//color:white;
+outline: none;
+letter-spacing: 0;
+z-index: 10;
+display: block;
+height: 32px;
+position: relative;
+overflow: hidden;
+font-variant:small-caps;
+}   
+#menu_lava li a:hover {
+border: none;
+text-decoration: blink;
+}

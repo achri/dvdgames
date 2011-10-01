@@ -1,0 +1,6 @@
+/*
+	FORCE PREVERT CLOSE DIALOG TO SHOW
+*/
+.ui-dialog-titlebar-close{
+    display: none;
+}

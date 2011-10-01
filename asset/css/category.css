@@ -1,0 +1,34 @@
+.category{
+	HEIGHT: 265px;
+}
+
+.category-accordion .accordion_content {
+	PADDING: 5px 5px 5px 5px;
+}
+
+.category-sel {
+	margin-top: 2px;
+	HEIGHT:63px;
+	WIDTH: 70px;
+	FLOAT: right;
+	text-align: center;
+}
+
+.category-sel img{
+	margin:2px auto;
+	width: 67px; 
+	height: 60px;
+	text-align: center;
+}
+
+.category-selectable img {
+	margin:2px auto;
+	width:60px;
+	height:60px;
+}
+
+#feedback { font-size: 1.4em; }
+.category-selectable .ui-selecting { background: #FECA40; }
+.category-selectable .ui-selected { background: #F39814; color: white; }
+.category-selectable { list-style-type: none;}
+.category-selectable li { margin: 0 0 0 0; padding: 5px; float: left; width: 60px; height: 62px; font-size: 15pt; text-align: center; }
